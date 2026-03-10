@@ -1,1 +1,1 @@
-# kikuh526-gif.gihub.io
+# kikuh526-gif.github.io
