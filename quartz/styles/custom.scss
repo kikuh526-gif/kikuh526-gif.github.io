@@ -1,3 +1,72 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// 全体の背景
+body {
+  background: linear-gradient(180deg, #f7f5f2 0%, #efe9e1 100%);
+}
+
+// 本文をカードっぽくする
+.center article {
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 24px;
+  padding: 2rem 2.4rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(6px);
+}
+
+// 左右カラムの見た目を少し柔らかくする
+.left,
+.right {
+  gap: 1rem;
+}
+
+.left > *,
+.right > * {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 18px;
+  padding: 0.9rem 1rem;
+}
+
+// サイトタイトルまわり
+.page-title a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+// 見出し
+h1 {
+  font-size: 2.3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+// 本文
+p,
+li {
+  line-height: 1.8;
+}
+
+// リンク
+a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+// 画像を少し上品に
+img {
+  border-radius: 16px;
+}
