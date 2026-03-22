@@ -70,3 +70,78 @@ a:hover {
 img {
   border-radius: 16px;
 }
+
+/* =========================
+   Mobile layout fixes
+   ========================= */
+@media (max-width: 800px) {
+  /* 上部のごちゃつきを減らす */
+  .search,
+  .darkmode,
+  .reader-mode {
+    display: none !important;
+  }
+
+  /* サイト名の縦崩れを止める */
+  .page-header,
+  .page-header *,
+  .sidebar,
+  .sidebar * {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+    word-break: keep-all;
+  }
+
+  /* 上部余白を小さくする */
+  .page-header {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+
+  /* トップページのメタ情報は消す */
+  body[data-slug="index"] .content-meta {
+    display: none !important;
+  }
+
+  /* 記事タイトル周りを詰める */
+  article h1 {
+    margin-bottom: 0.4rem !important;
+    line-height: 1.2;
+  }
+
+  /* タイトル下のメタ情報 */
+  .content-meta {
+    margin-top: 0 !important;
+    margin-bottom: 0.8rem !important;
+  }
+
+  /* 段落全体の余白をやや詰める */
+  article p {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.8;
+  }
+
+  /* リンクだけが浮かないようにする */
+  article a {
+    word-break: break-all;
+  }
+
+  /* URLが単独段落になっている場合の余白を詰める */
+  article p:has(+ p) {
+    margin-bottom: 0.5rem;
+  }
+
+  /* 見出し直後の段落余白を小さくする */
+  article h1 + p,
+  article h2 + p,
+  article h3 + p {
+    margin-top: 0.4rem !important;
+  }
+
+  /* タイトルのすぐ下のURL段落を近づける */
+  article h1 + p a {
+    display: inline-block;
+    margin-top: 0.1rem;
+  }
+}
