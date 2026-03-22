@@ -26,6 +26,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.RecentNotes({
+      title: "Recent Writing",
+      limit: 5,
+      showTags: false,
+    }),
   ],
   left: [
     Component.PageTitle(),
@@ -40,7 +45,12 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      title: "Contents",
+      folderClickBehavior: "link",
+      folderDefaultState: "collapsed",
+      useSavedState: false,
+    }),
   ],
   right: [
     Component.Graph(),
