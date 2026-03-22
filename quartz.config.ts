@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "論文置き場",
+    pageTitle: "保管庫",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
