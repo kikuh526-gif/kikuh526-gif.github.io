@@ -10,8 +10,9 @@ export const sharedPageComponents: SharedLayout = {
   ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/kikuh526-gif",
+      X: "https://x.com/KakkPhys395",
+      Email: "kiku25252@gmail.com",
     },
   }),
 }
@@ -26,11 +27,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-    Component.RecentNotes({
-      title: "Recent Writing",
-      limit: 5,
-      showTags: false,
-    }),
   ],
   left: [
     Component.PageTitle(),
